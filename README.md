@@ -16,4 +16,12 @@ Available handlebar helpers:
 
 {{claude}}
 
+{{addClasses "page-article" page-name}}
+
+{{#if_eq page-name 'page-local-contact'}}
+{{else}}
+{{/if_eq}}
+
+{{{showSubmenus has-submenu}}}
+
 ```

@@ -3,12 +3,18 @@ module.exports = function (handlebars) {
       cat     =  require('./cat')(handlebars),
       claude  =  require('./claude')(handlebars),
       lorem   =  require('./lorem'),
+      addClasses   =  require('./addClasses'),
+      showSubmenus   =  require('./showSubmenus'),
+      if_eq   =  require('./if_eq'),
       helpers = {
           times: times,
           lipsumtitle: lorem.lipsumtitle,
           lipsum: lorem.lipsum,
           cat: cat,
-          claude: claude
+          claude: claude,
+          addClasses: addClasses,
+          showSubmenus: showSubmenus,
+          if_eq: if_eq
       };
 
   return helpers;
