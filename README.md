@@ -24,4 +24,6 @@ Available handlebar helpers:
 
 {{{showSubmenus has-submenu}}}
 
+{{#ifCond var1 '==' var2}}, {{#ifCond var1 '!=' var2}} etc.
+
 ```

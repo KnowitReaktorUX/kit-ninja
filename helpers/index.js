@@ -7,6 +7,7 @@ module.exports = function (handlebars) {
       showSubmenus   =  require('./showSubmenus'),
       if_eq   =  require('./if_eq'),
       json = require('./json'),
+      ifCond = require('./ifCond'),
       helpers = {
           times: times,
           lipsumtitle: lorem.lipsumtitle,
@@ -17,6 +18,7 @@ module.exports = function (handlebars) {
           showSubmenus: showSubmenus,
           if_eq: if_eq,
           json: json,
+          ifCond: ifCond
       };
 
   return helpers;
