@@ -26,4 +26,6 @@ Available handlebar helpers:
 
 {{#ifCond var1 '==' var2}}, {{#ifCond var1 '!=' var2}} etc.
 
+{{>myPartial id=(concat "foo" myVar myOtherVar)}}
+
 ```

@@ -8,6 +8,7 @@ module.exports = function (handlebars) {
       if_eq   =  require('./if_eq'),
       json = require('./json'),
       ifCond = require('./ifCond'),
+      concat = require('./concat'),
       helpers = {
           times: times,
           lipsumtitle: lorem.lipsumtitle,
@@ -18,7 +19,8 @@ module.exports = function (handlebars) {
           showSubmenus: showSubmenus,
           if_eq: if_eq,
           json: json,
-          ifCond: ifCond
+          ifCond: ifCond,
+          concat: concat
       };
 
   return helpers;
